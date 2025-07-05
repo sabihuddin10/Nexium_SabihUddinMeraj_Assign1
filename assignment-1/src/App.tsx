@@ -1,10 +1,12 @@
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import QuoteGenerator from "./components/ui/QuoteGenerator"
+import WebWrapper from "./components/Wrappers/WebWrapper"
+import QuoteGenerator from "./components/QuoteGenerator/QuoteGenerator"
 function App() {
   return (
     <>
-      <QuoteGenerator />
+    <WebWrapper>
+      <QuoteGenerator/>
+
+    </WebWrapper>
     </>
   )
 }
