@@ -32,7 +32,7 @@ const QuoteGenerator: React.FC = () => {
         <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] mx-auto w-full max-w-xl min-h-screen flex flex-col items-center gap-4 p-4">        
             <div className="mx-auto w-full flex flex-col items-center gap-4 border border-blue-500 rounded-md shadow-sm p-4">
                     <h1 className="text-3xl sm:text-4xl font-bold text-blue-400 mb-4 text-center">Quote Generator</h1>
-                    <Input placeholder="Search by topic..." className="text-white text-center placeholder:text-white text-base sm:text-lg w-full max-w-md 
+                    <Input placeholder="Search by topic...(Life, Love, Hope etc)" className="text-white text-center placeholder:text-white text-base sm:text-lg w-full max-w-md 
                 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-70 border border-blue-400"
                     value={userInput} onChange={(e)=> setUserInput(e.target.value)} ></Input >
                     <ShadButton className="border border-transparent bg-[#181818] text-white hover:border-blue-400 transition-colors duration-200" onClick={() => QuoteGenerate(userInput)}>Generate</ShadButton>
