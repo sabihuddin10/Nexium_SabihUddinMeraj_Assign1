@@ -29,7 +29,7 @@ const QuoteGenerator: React.FC = () => {
         setHasSearched(true);
     };
     return (
-        <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] mx-auto w-full max-w-xl flex flex-col items-center gap-4 p-4">        
+        <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] mx-auto w-full max-w-xl min-h-screen flex flex-col items-center gap-4 p-4">        
             <div className="mx-auto w-full flex flex-col items-center gap-4 border border-blue-500 rounded-md shadow-sm p-4">
                     <h1 className="text-3xl sm:text-4xl font-bold text-blue-400 mb-4 text-center">Quote Generator</h1>
                     <Input placeholder="Search by topic..." className="text-white text-center placeholder:text-white text-base sm:text-lg w-full max-w-md 
@@ -43,7 +43,7 @@ const QuoteGenerator: React.FC = () => {
                 <p className="text-red-500">No quotes found</p>
             ) : (
                 matchedQuotes.map((quote,index) => (
-                    <div key={index} className="my-2">
+                <div key={index} className="my-2">
                     <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-blue-400 font-serif border border-blue-300 shadow-md shadow-blue-200 rounded-xl gap-2 p-3 max-w-xl w-full flex justify-between items-start relative">
                         <span className="pr-8">{quote.text}</span>
                         <button
